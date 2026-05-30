@@ -33,5 +33,12 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Release artifacts
+release-artifacts/
+
+# Archives
+*.zip
+*.tar.gz
+
 # Cargo lock (optional, keep for binary apps)
 # Cargo.lock

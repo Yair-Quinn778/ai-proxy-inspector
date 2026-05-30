@@ -1,0 +1,122 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    name: Build Windows Release
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          targets: x86_64-pc-windows-msvc
+
+      - name: Cache Rust dependencies
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+
+      - name: Install Tauri CLI
+        run: npm install -g @tauri-apps/cli
+
+      - name: Build frontend
+        run: npm run build
+
+      - name: Tauri release build
+        run: npx tauri build
+
+      - name: Prepare release artifacts
+        shell: bash
+        run: |
+          mkdir -p release-artifacts
+
+          # Copy NSIS installer
+          find src-tauri/target/release/bundle/nsis -name "*.exe" -exec cp {} release-artifacts/ \;
+
+          # Copy MSI installer
+          find src-tauri/target/release/bundle/msi -name "*.msi" -exec cp {} release-artifacts/ \;
+
+          # List artifacts
+          echo "=== Release Artifacts ==="
+          ls -la release-artifacts/
+
+      - name: Upload NSIS installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: nsis-installer
+          path: release-artifacts/*.exe
+
+      - name: Upload MSI installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: msi-installer
+          path: release-artifacts/*.msi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            release-artifacts/*.exe
+            release-artifacts/*.msi
+          body: |
+            ## AI 代理检测器 / AI Proxy Inspector
+
+            ### 📦 Windows 安装包 / Windows Installers
+
+            | 类型 / Type | 文件 / File |
+            |------------|-------------|
+            | NSIS 安装程序 / NSIS Installer | `.exe` |
+            | MSI 安装程序 / MSI Installer | `.msi` |
+
+            ### 🚀 快速安装 / Quick Install
+
+            1. 下载 `.exe` 或 `.msi` 文件
+            2. 双击运行安装程序
+            3. 安装完成后即可使用
+
+            1. Download the `.exe` or `.msi` file
+            2. Double-click to run the installer
+            3. Launch after installation
+
+            ### 🔍 功能 / Features
+
+            - IP 信息检测 / IP Information
+            - DNS 泄漏检测 / DNS Leak Check
+            - WebRTC 泄漏检测 / WebRTC Leak Check
+            - AI 服务可用性 / AI Service Availability (ChatGPT, Claude, Gemini...)
+            - 风险分析 / Risk Analysis
+            - 流媒体解锁检测 / Streaming Unlock Check
+            - 网速测试 / Speed Test
+            - 综合评分 / Comprehensive Scoring
+
+            ### 🌐 语言 / Languages
+
+            默认中文，支持 English 切换 / Default Chinese, switchable to English
+
+            ---
+            🤖 Generated with GitHub Actions
+          draft: false
+          prerelease: false
+          generateReleaseNotes: true

@@ -1,11 +1,13 @@
 # AI 代理检测器 / AI Proxy Inspector
 
 <p align="center">
+  <a href="https://github.com/Yair-Quinn778/ai-proxy-inspector/actions/workflows/ci.yml"><img src="https://github.com/Yair-Quinn778/ai-proxy-inspector/actions/workflows/ci.yml/badge.svg" alt="Build Status" /></a>
+  <a href="https://github.com/Yair-Quinn778/ai-proxy-inspector/releases/latest"><img src="https://img.shields.io/github/v/release/Yair-Quinn778/ai-proxy-inspector?label=Latest%20Release" alt="Latest Release" /></a>
   <img src="https://img.shields.io/badge/Rust-1.77+-orange.svg" alt="Rust" />
   <img src="https://img.shields.io/badge/Tauri-2.0-blue.svg" alt="Tauri" />
   <img src="https://img.shields.io/badge/React-18-blue.svg" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.5-blue.svg" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
 </p>
 
 > 🇨🇳 专业的 AI 节点检测桌面应用 — 全面测试代理/VPN 对 ChatGPT、Claude、Gemini 及流媒体服务的访问能力。
