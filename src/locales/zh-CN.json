@@ -1,0 +1,295 @@
+{
+  "app": {
+    "name": "AI代理检测器",
+    "nameShort": "AI代理",
+    "subtitle": "检测器",
+    "version": "版本 1.0.0",
+    "description": "专业AI节点检测平台。测试您的代理或VPN对ChatGPT、Claude、Gemini、流媒体服务等的访问情况。"
+  },
+
+  "nav": {
+    "dashboard": "仪表盘",
+    "ipInfo": "IP检测",
+    "dnsCheck": "DNS检测",
+    "webrtc": "WebRTC检测",
+    "aiServices": "AI服务",
+    "riskAnalysis": "风险分析",
+    "streaming": "流媒体",
+    "speedTest": "网速测试",
+    "reports": "报告中心"
+  },
+
+  "header": {
+    "ready": "就绪",
+    "detecting": "检测中...",
+    "complete": "已完成",
+    "error": "错误",
+    "startDetection": "开始检测"
+  },
+
+  "section": {
+    "dashboard": "仪表盘",
+    "ipInformation": "IP信息",
+    "dnsCheck": "DNS检测",
+    "webrtcCheck": "WebRTC检测",
+    "aiServices": "AI服务",
+    "riskAnalysis": "风险分析",
+    "streamingMedia": "流媒体",
+    "speedTest": "网速测试",
+    "reportsHistory": "报告中心"
+  },
+
+  "detection": {
+    "fetchingIP": "获取IP信息...",
+    "checkingDNS": "检查DNS...",
+    "checkingWebRTC": "检查WebRTC...",
+    "testingAI": "测试AI服务...",
+    "analyzingGoogle": "分析Google风险...",
+    "analyzingCloudflare": "分析Cloudflare风险...",
+    "checkingPurity": "检查IP纯净度...",
+    "checkingBlacklists": "检查黑名单...",
+    "runningSpeed": "运行网速测试...",
+    "calculatingScore": "计算综合评分...",
+    "startFullDetection": "开始全面检测",
+    "noData": "暂无检测数据",
+    "runFullDetection": "运行全面检测以获取数据。"
+  },
+
+  "dashboard": {
+    "title": "AI代理检测器",
+    "description": "专业AI节点检测平台。测试您的代理或VPN对ChatGPT、Claude、Gemini、流媒体服务等的访问情况。",
+    "startFullDetection": "开始全面检测",
+    "features": {
+      "aiServices": "AI服务",
+      "dnsWebRTC": "DNS & WebRTC",
+      "riskAnalysis": "风险分析",
+      "streaming": "流媒体",
+      "speedTest": "网速测试",
+      "scoreReport": "评分报告"
+    },
+    "scoreBreakdown": "评分明细",
+    "ipQuality": "IP质量",
+    "aiAvailability": "AI可用性",
+    "streaming": "流媒体",
+    "riskLevel": "风险等级",
+    "network": "网络性能",
+    "quickStats": {
+      "ipAddress": "IP地址",
+      "asnIsp": "ASN / ISP",
+      "aiServices": "AI服务",
+      "dns": "DNS",
+      "available": "可用",
+      "leaking": "泄漏",
+      "secure": "安全"
+    },
+    "riskSummary": {
+      "googleRisk": "Google风险",
+      "cloudflareRisk": "Cloudflare风险",
+      "ipType": "IP类型"
+    },
+    "speedSummary": {
+      "ping": "延迟",
+      "download": "下载",
+      "upload": "上传"
+    }
+  },
+
+  "ip": {
+    "title": "IP信息",
+    "ipv4": "IPv4",
+    "asn": "ASN",
+    "isp": "ISP",
+    "location": "位置",
+    "zip": "邮编",
+    "coordinates": "坐标",
+    "timezone": "时区",
+    "proxyStatus": "代理状态",
+    "country": "国家",
+    "city": "城市",
+    "region": "地区",
+    "latitude": "纬度",
+    "longitude": "经度"
+  },
+
+  "map": {
+    "title": "地图位置",
+    "location": "地理位置",
+    "coordinates": "坐标信息"
+  },
+
+  "dns": {
+    "title": "DNS检测",
+    "status": "DNS状态",
+    "leakDetected": "检测到DNS泄漏",
+    "secure": "DNS安全",
+    "multipleServers": "检测到多个DNS服务器",
+    "noLeak": "未检测到DNS泄漏",
+    "provider": "提供商",
+    "country": "国家",
+    "servers": "DNS服务器",
+    "resolutionDetails": "解析详情"
+  },
+
+  "webrtc": {
+    "title": "WebRTC泄漏检测",
+    "leakDetected": "检测到WebRTC泄漏",
+    "secure": "WebRTC安全",
+    "localIPExposed": "本地IP可能通过WebRTC暴露",
+    "noLeak": "未检测到WebRTC泄漏",
+    "detectedIPs": "检测到的IP",
+    "local": "本地",
+    "public": "公网",
+    "info": "即使使用VPN或代理，WebRTC也可能泄露您的真实IP地址。我们通过创建对等连接并检查候选IP来进行测试。"
+  },
+
+  "ai": {
+    "title": "AI服务检测",
+    "status": "AI服务状态",
+    "available": "可用",
+    "noData": "暂无检测数据。运行全面检测以检查AI服务。",
+    "servicesAvailable": "个服务可用",
+    "chatgpt": "ChatGPT",
+    "claude": "Claude",
+    "gemini": "Gemini",
+    "grok": "Grok",
+    "perplexity": "Perplexity",
+    "copilot": "Copilot",
+    "poe": "Poe",
+    "deepseek": "DeepSeek"
+  },
+
+  "risk": {
+    "title": "风险分析",
+    "noData": "暂无风险数据。运行全面检测以分析风险等级。",
+    "googleRisk": "Google风险分析",
+    "riskLevel": "风险等级",
+    "captchaProbability": "验证码概率",
+    "searchAvailable": "搜索可用",
+    "yes": "是",
+    "no": "否",
+    "cloudflareRisk": "Cloudflare风险分析",
+    "overallRisk": "总体风险",
+    "botRisk": "机器人风险",
+    "challengeProbability": "质询概率",
+    "ipPurity": "IP纯净度检查",
+    "ipType": "IP类型",
+    "vpn": "VPN",
+    "proxy": "代理",
+    "tor": "TOR",
+    "hosting": "托管",
+    "confidence": "可信度",
+    "blacklistCheck": "黑名单检查",
+    "blacklisted": "已列入黑名单",
+    "notBlacklisted": "未列入黑名单",
+    "listedOn": "列入 {{count}} 个黑名单"
+  },
+
+  "media": {
+    "title": "流媒体",
+    "noData": "暂无流媒体数据。运行全面检测以检查流媒体服务。",
+    "streamingServices": "流媒体服务",
+    "servicesUnlocked": "个服务解锁",
+    "tiktok": "TikTok",
+    "region": "地区",
+    "uploadAccess": "上传权限",
+    "available": "可用",
+    "blocked": "已封锁",
+    "youtubePremium": "YouTube Premium",
+    "premiumRegion": "Premium地区",
+    "cdnRegion": "CDN地区",
+    "netflix": "Netflix",
+    "disneyPlus": "Disney+",
+    "hulu": "Hulu",
+    "hboMax": "HBO Max",
+    "primeVideo": "Prime Video",
+    "appleTV": "Apple TV+",
+    "spotify": "Spotify",
+    "youtube": "YouTube"
+  },
+
+  "speed": {
+    "title": "网速测试",
+    "networkSpeed": "网络速度测试",
+    "noData": "暂无网速测试数据。运行全面检测以测试网络速度。",
+    "ping": "延迟",
+    "download": "下载",
+    "upload": "上传",
+    "jitter": "抖动",
+    "packetLoss": "丢包率"
+  },
+
+  "report": {
+    "title": "报告中心",
+    "exportCsv": "导出CSV",
+    "exportJson": "导出JSON",
+    "detectionHistory": "检测历史",
+    "noHistory": "暂无检测历史。请先运行全面检测。",
+    "time": "时间",
+    "ip": "IP",
+    "asn": "ASN",
+    "country": "国家",
+    "city": "城市",
+    "isp": "ISP",
+    "dnsProvider": "DNS提供商",
+    "googleRisk": "Google风险",
+    "cfRisk": "CF风险",
+    "ipType": "IP类型",
+    "score": "评分"
+  },
+
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "chinese": "中文",
+    "english": "English"
+  },
+
+  "score": {
+    "grade": "综合评分",
+    "total": "总分",
+    "ipQuality": "IP纯净度",
+    "aiAvailability": "AI可用性",
+    "streaming": "流媒体",
+    "riskScore": "风险评分",
+    "networkScore": "网络评分"
+  },
+
+  "status": {
+    "available": "可用",
+    "unavailable": "不可用",
+    "blocked": "已封锁",
+    "error": "错误",
+    "unknown": "未知",
+    "detecting": "检测中...",
+    "complete": "检测完成",
+    "failed": "检测失败",
+    "networkError": "网络错误",
+    "requestTimeout": "请求超时",
+    "noProxy": "未连接代理",
+    "ready": "就绪",
+    "leaking": "泄漏",
+    "secure": "安全",
+    "residential": "住宅",
+    "datacenter": "数据中心",
+    "mobile": "移动",
+    "vpn": "VPN",
+    "proxy": "代理",
+    "tor": "TOR"
+  },
+
+  "button": {
+    "startDetection": "开始检测",
+    "refresh": "刷新",
+    "exportReport": "导出报告",
+    "copyResults": "复制结果",
+    "save": "保存",
+    "reset": "重置",
+    "retry": "重试"
+  },
+
+  "riskLevel": {
+    "low": "低",
+    "medium": "中",
+    "high": "高"
+  }
+}

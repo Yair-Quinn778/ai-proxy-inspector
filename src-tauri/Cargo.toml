@@ -1,0 +1,26 @@
+[package]
+name = "ai-proxy-inspector"
+version = "1.0.0"
+description = "AI Proxy Inspector - Professional AI Node Detection Platform"
+authors = ["AI Proxy Inspector"]
+edition = "2021"
+
+[lib]
+name = "ai_proxy_inspector_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+tokio = { version = "1", features = ["full"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
+chrono = { version = "0.4", features = ["serde"] }
+trust-dns-resolver = "0.23"
+rand = "0.8"
+uuid = { version = "1", features = ["v4"] }

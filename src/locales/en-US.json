@@ -1,0 +1,295 @@
+{
+  "app": {
+    "name": "AI Proxy Inspector",
+    "nameShort": "AI Proxy",
+    "subtitle": "Inspector",
+    "version": "Version 1.0.0",
+    "description": "Professional AI node detection platform. Test your proxy or VPN for ChatGPT, Claude, Gemini, streaming services, and more."
+  },
+
+  "nav": {
+    "dashboard": "Dashboard",
+    "ipInfo": "IP Info",
+    "dnsCheck": "DNS Check",
+    "webrtc": "WebRTC",
+    "aiServices": "AI Services",
+    "riskAnalysis": "Risk Analysis",
+    "streaming": "Streaming",
+    "speedTest": "Speed Test",
+    "reports": "Reports"
+  },
+
+  "header": {
+    "ready": "Ready",
+    "detecting": "Detecting...",
+    "complete": "Complete",
+    "error": "Error",
+    "startDetection": "Start Detection"
+  },
+
+  "section": {
+    "dashboard": "Dashboard",
+    "ipInformation": "IP Information",
+    "dnsCheck": "DNS Check",
+    "webrtcCheck": "WebRTC Check",
+    "aiServices": "AI Services",
+    "riskAnalysis": "Risk Analysis",
+    "streamingMedia": "Streaming & Media",
+    "speedTest": "Speed Test",
+    "reportsHistory": "Reports & History"
+  },
+
+  "detection": {
+    "fetchingIP": "Fetching IP info...",
+    "checkingDNS": "Checking DNS...",
+    "checkingWebRTC": "Checking WebRTC...",
+    "testingAI": "Testing AI services...",
+    "analyzingGoogle": "Analyzing Google risk...",
+    "analyzingCloudflare": "Analyzing Cloudflare risk...",
+    "checkingPurity": "Checking IP purity...",
+    "checkingBlacklists": "Checking blacklists...",
+    "runningSpeed": "Running speed test...",
+    "calculatingScore": "Calculating score...",
+    "startFullDetection": "Start Full Detection",
+    "noData": "No detection data yet",
+    "runFullDetection": "Run a full detection to check."
+  },
+
+  "dashboard": {
+    "title": "AI Proxy Inspector",
+    "description": "Professional AI node detection platform. Test your proxy or VPN for ChatGPT, Claude, Gemini, streaming services, and more.",
+    "startFullDetection": "Start Full Detection",
+    "features": {
+      "aiServices": "AI Services",
+      "dnsWebRTC": "DNS & WebRTC",
+      "riskAnalysis": "Risk Analysis",
+      "streaming": "Streaming",
+      "speedTest": "Speed Test",
+      "scoreReport": "Score Report"
+    },
+    "scoreBreakdown": "Score Breakdown",
+    "ipQuality": "IP Quality",
+    "aiAvailability": "AI Availability",
+    "streaming": "Streaming",
+    "riskLevel": "Risk Level",
+    "network": "Network",
+    "quickStats": {
+      "ipAddress": "IP Address",
+      "asnIsp": "ASN / ISP",
+      "aiServices": "AI Services",
+      "dns": "DNS",
+      "available": "Available",
+      "leaking": "Leaking",
+      "secure": "Secure"
+    },
+    "riskSummary": {
+      "googleRisk": "Google Risk",
+      "cloudflareRisk": "Cloudflare Risk",
+      "ipType": "IP Type"
+    },
+    "speedSummary": {
+      "ping": "Ping",
+      "download": "Download",
+      "upload": "Upload"
+    }
+  },
+
+  "ip": {
+    "title": "IP Information",
+    "ipv4": "IPv4",
+    "asn": "ASN",
+    "isp": "ISP",
+    "location": "Location",
+    "zip": "ZIP",
+    "coordinates": "Coordinates",
+    "timezone": "Timezone",
+    "proxyStatus": "Proxy Status",
+    "country": "Country",
+    "city": "City",
+    "region": "Region",
+    "latitude": "Latitude",
+    "longitude": "Longitude"
+  },
+
+  "map": {
+    "title": "Map Location",
+    "location": "Location",
+    "coordinates": "Coordinates"
+  },
+
+  "dns": {
+    "title": "DNS Check",
+    "status": "DNS Status",
+    "leakDetected": "DNS Leak Detected",
+    "secure": "DNS Secure",
+    "multipleServers": "Multiple DNS servers detected",
+    "noLeak": "No DNS leaks detected",
+    "provider": "Provider",
+    "country": "Country",
+    "servers": "DNS Servers",
+    "resolutionDetails": "Resolution Details"
+  },
+
+  "webrtc": {
+    "title": "WebRTC Leak Check",
+    "leakDetected": "WebRTC Leak Detected",
+    "secure": "WebRTC Secure",
+    "localIPExposed": "Local IPs may be exposed via WebRTC",
+    "noLeak": "No WebRTC leaks detected",
+    "detectedIPs": "Detected IPs",
+    "local": "Local",
+    "public": "Public",
+    "info": "WebRTC can expose your real IP address even when using a VPN or proxy. We test by creating a peer connection and checking candidate IPs."
+  },
+
+  "ai": {
+    "title": "AI Services Detection",
+    "status": "AI Services Status",
+    "available": "available",
+    "noData": "No detection data yet. Run a full detection to check AI services.",
+    "servicesAvailable": "services available",
+    "chatgpt": "ChatGPT",
+    "claude": "Claude",
+    "gemini": "Gemini",
+    "grok": "Grok",
+    "perplexity": "Perplexity",
+    "copilot": "Copilot",
+    "poe": "Poe",
+    "deepseek": "DeepSeek"
+  },
+
+  "risk": {
+    "title": "Risk Analysis",
+    "noData": "No risk data yet. Run a full detection to analyze risk levels.",
+    "googleRisk": "Google Risk Analysis",
+    "riskLevel": "Risk Level",
+    "captchaProbability": "CAPTCHA Probability",
+    "searchAvailable": "Search Available",
+    "yes": "Yes",
+    "no": "No",
+    "cloudflareRisk": "Cloudflare Risk Analysis",
+    "overallRisk": "Overall Risk",
+    "botRisk": "Bot Risk",
+    "challengeProbability": "Challenge Probability",
+    "ipPurity": "IP Purity Check",
+    "ipType": "IP Type",
+    "vpn": "VPN",
+    "proxy": "Proxy",
+    "tor": "TOR",
+    "hosting": "Hosting",
+    "confidence": "Confidence",
+    "blacklistCheck": "Blacklist Check",
+    "blacklisted": "Blacklisted",
+    "notBlacklisted": "Not blacklisted",
+    "listedOn": "Listed on {{count}} blacklist(s)"
+  },
+
+  "media": {
+    "title": "Streaming & Media",
+    "noData": "No streaming data yet. Run a full detection to check streaming services.",
+    "streamingServices": "Streaming Services",
+    "servicesUnlocked": "services unlocked",
+    "tiktok": "TikTok",
+    "region": "Region",
+    "uploadAccess": "Upload Access",
+    "available": "Available",
+    "blocked": "Blocked",
+    "youtubePremium": "YouTube Premium",
+    "premiumRegion": "Premium Region",
+    "cdnRegion": "CDN Region",
+    "netflix": "Netflix",
+    "disneyPlus": "Disney+",
+    "hulu": "Hulu",
+    "hboMax": "HBO Max",
+    "primeVideo": "Prime Video",
+    "appleTV": "Apple TV+",
+    "spotify": "Spotify",
+    "youtube": "YouTube"
+  },
+
+  "speed": {
+    "title": "Speed Test",
+    "networkSpeed": "Network Speed Test",
+    "noData": "No speed test data yet. Run a full detection to test network speed.",
+    "ping": "Ping",
+    "download": "Download",
+    "upload": "Upload",
+    "jitter": "Jitter",
+    "packetLoss": "Packet Loss"
+  },
+
+  "report": {
+    "title": "Reports & History",
+    "exportCsv": "Export CSV",
+    "exportJson": "Export JSON",
+    "detectionHistory": "Detection History",
+    "noHistory": "No detection history yet. Run a full detection first.",
+    "time": "Time",
+    "ip": "IP",
+    "asn": "ASN",
+    "country": "Country",
+    "city": "City",
+    "isp": "ISP",
+    "dnsProvider": "DNS Provider",
+    "googleRisk": "Google Risk",
+    "cfRisk": "CF Risk",
+    "ipType": "IP Type",
+    "score": "Score"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "chinese": "中文",
+    "english": "English"
+  },
+
+  "score": {
+    "grade": "Score",
+    "total": "Total",
+    "ipQuality": "IP Purity",
+    "aiAvailability": "AI Availability",
+    "streaming": "Streaming",
+    "riskScore": "Risk Score",
+    "networkScore": "Network Score"
+  },
+
+  "status": {
+    "available": "available",
+    "unavailable": "unavailable",
+    "blocked": "blocked",
+    "error": "error",
+    "unknown": "unknown",
+    "detecting": "Detecting...",
+    "complete": "Detection Complete",
+    "failed": "Detection Failed",
+    "networkError": "Network Error",
+    "requestTimeout": "Request Timeout",
+    "noProxy": "No Proxy Connected",
+    "ready": "Ready",
+    "leaking": "Leaking",
+    "secure": "Secure",
+    "residential": "Residential",
+    "datacenter": "Datacenter",
+    "mobile": "Mobile",
+    "vpn": "VPN",
+    "proxy": "Proxy",
+    "tor": "TOR"
+  },
+
+  "button": {
+    "startDetection": "Start Detection",
+    "refresh": "Refresh",
+    "exportReport": "Export Report",
+    "copyResults": "Copy Results",
+    "save": "Save",
+    "reset": "Reset",
+    "retry": "Retry"
+  },
+
+  "riskLevel": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  }
+}
